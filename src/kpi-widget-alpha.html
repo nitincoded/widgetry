@@ -1,0 +1,92 @@
+<!doctype html><html>
+<head>
+<title></title>
+<style>
+body { 
+	font-family: Helvetica;
+}
+
+.kpi-display {
+	height: 150px; 
+	width: 250px; 
+	background-color: #f7f7f7; 
+	box-shadow: 0 1px 5px rgba(0,0,0,.3), inset 0 10px 30px rgba(255,255,255,.3); 
+	color: #4c4c4c;
+	text-align: center; 
+	font-weight: 600; 
+	display: inline-block;
+	margin: 10px 20px;
+	/*text-transform: uppercase;*/
+}
+
+.kpi-display-title {
+	height: 30px; 
+	width: 100%;
+	line-height: 30px; 
+	text-shadow: 0 1px 1px #fff; 
+	font-weight: 700; 
+	background-color: #f4f4f4; 
+	box-shadow: inset 0 -5px 20px rgba(0,0,0,.05); 
+	font-size: 18px; 
+	color: #525252;
+}
+
+.kpi-display-footer {
+	height: 20px; 
+	width: 100%; 
+	line-height: 20px; 
+	font-size: 12px; 
+	color: #939393;
+}
+
+.kpi-display-data {
+	height: 100px; 
+	width: 100%; 
+	line-height: 100px;
+	font-size: 50px; 
+}
+
+.kpi-display-data-text {
+	display: inline; 
+	margin-left: 20px;
+	vertical-align: middle;
+}
+
+.kpi-display-data-trend {
+	height: 100px;
+	width: 30px; 
+	display: inline-block; 
+	margin-right: 0;
+	vertical-align: middle;
+}
+
+.kpi-display-data-trend svg { display: none; }
+.kpi-display-data-trend-up .kpi-display-data-trend-up-svg { display: inline-block;  }
+.kpi-display-data-trend-down .kpi-display-data-trend-down-svg { display: inline-block;  }
+</style>
+</head>
+<body>
+
+<div class="kpi-display">
+	<div class="kpi-display-title">
+		Sales
+	</div>
+	<div class="kpi-display-data">
+		<div class="kpi-display-data-text">$3,000</div>
+		<div class="kpi-display-data-trend kpi-display-data-trend-up">
+			<svg class="kpi-display-data-trend-up-svg" style="width: 30px; height: 100px;">
+				<path d="M0 50 L0 40 L15 30 L30 40 L30 50 L15 40 Z" fill="#2b2" />
+			</svg>
+			<svg class="kpi-display-data-trend-down-svg" style="width: 30px; height: 100px;">
+				<path d="M0 50 L0 60 L15 70 L30 60 L30 50 L15 60 Z" fill="#b22" />
+			</svg>
+		</div>
+	</div>
+	<div class="kpi-display-footer">
+		Goal: $3,500/week
+	</div>
+</div>
+
+
+</body>
+</html>
